@@ -1,0 +1,55 @@
+#---Alias----
+alias ll="ls -la"
+alias ld="ls -al | grep ^d" # List all directories in current directory in long list format
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+alias cp='cp -v'
+# --------------- Python Tools -------------
+alias rmpyc='find . -name "*.pyc" -delete'
+
+# --------------- Work project -------------
+alias vrs='source ~/virtenv/rs/bin/activate'
+alias cdrs='cd /Users/olaputin/work/rs/Python-Backends/revelV2'
+alias cdvrs='cdrs && vrs'
+alias cmplmsg="cdvrs && ./manage.py compilemessages && ./manage.py compilejsi18n"
+alias qaloc="./manage.py make_qa_locale && ./manage.py compilemessages && ./manage.py compilejsi18n"
+alias rs='/Users/olaputin/work/rs/Python-Backends/revel2'
+alias sp='sh /Users/olaputin/cmd/stash_pull'
+# ------------  Redis --------------
+alias redisstart='sudo launchctl start io.redis.redis-server'
+alias redisstop='sudo launchctl stop io.redis.redis-server'
+
+# ------------- GIT ----------------------
+alias gsh='git stash'
+alias gp='git pull'
+alias gout='git checkout'
+
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# added by Anaconda2 2.5.0 installer
+#export PATH="/Users/olaputin/anaconda/bin:$PATH"
+
+# -------------- ssh alias ------------------
+alias catup='ssh cat.revelup.com'
+alias itl='ssh root@138.68.104.59'
+alias ptltenv='source ~/virtenv/ptltool3/bin/activate'
+
+# -------------- itlense --------------------
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+#PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+PATH=$PATH:/usr/local/sbin
+export PATH
+
+# added by Anaconda3 4.2.0 installer
+export PATH="/Users/olaputin/anaconda/bin:$PATH"
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
